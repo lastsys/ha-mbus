@@ -1,0 +1,4 @@
+# paho-mqtt v2 changes the callback API (CallbackAPIVersion). Pin to v1 until
+# the on_connect / on_disconnect signatures are updated to the v2 style.
+paho-mqtt>=1.6.1,<2.0
+defusedxml>=0.7.1

@@ -1,0 +1,19 @@
+configuration:
+  mbus_host:
+    name: "M-Bus TCP Host"
+    description: "Hostname or IP address of the M-Bus TCP gateway"
+  mbus_port:
+    name: "M-Bus TCP Port"
+    description: "TCP port of the M-Bus gateway (default: 10001)"
+  mbus_address:
+    name: "M-Bus Device Address"
+    description: "Primary M-Bus address of the device (0–250)"
+  poll_interval:
+    name: "Poll Interval (seconds)"
+    description: "How often to read the device. Minimum 10 s, maximum 3600 s."
+  device_name:
+    name: "Device Name"
+    description: "Optional friendly name shown in Home Assistant (e.g. 'Cold Water Meter')"
+  device_area:
+    name: "Area"
+    description: "Optional Home Assistant area to assign the device to (e.g. 'Basement')"

@@ -1,0 +1,13 @@
+build_from:
+  amd64: "ghcr.io/hassio-addons/base:20.1.1"
+  aarch64: "ghcr.io/hassio-addons/base:20.1.1"
+  armv7: "ghcr.io/hassio-addons/base:20.1.1"
+  armhf: "ghcr.io/hassio-addons/base:20.1.1"
+  i386: "ghcr.io/hassio-addons/base:20.1.1"
+
+labels:
+  org.opencontainers.image.title: "M-Bus MQTT"
+  org.opencontainers.image.description: "M-Bus TCP to MQTT bridge for Home Assistant"
+  org.opencontainers.image.source: "https://git.int.lastsys.com/stefan/ha-mbus"
+  org.opencontainers.image.licenses: "MIT"
+  org.opencontainers.image.authors: "Stefan Larsson <stefan@lastsys.com>"

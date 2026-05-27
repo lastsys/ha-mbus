@@ -1,0 +1,32 @@
+name: "M-Bus MQTT"
+description: "Reads a single M-Bus device over TCP and publishes to MQTT with Home Assistant auto-discovery"
+version: "1.0.0"
+slug: "mbus_mqtt"
+url: "https://git.int.lastsys.com/stefan/ha-mbus"
+init: false
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+startup: services
+boot: auto
+services:
+  - mqtt:need
+
+options:
+  mbus_host: null        # no default — user must supply the gateway IP/hostname
+  mbus_port: 10001
+  mbus_address: 1
+  poll_interval: 60
+  device_name: ""
+  device_area: ""
+
+schema:
+  mbus_host: str
+  mbus_port: port
+  mbus_address: "int(0,250)"
+  poll_interval: "int(10,3600)"
+  device_name: str?
+  device_area: str?
